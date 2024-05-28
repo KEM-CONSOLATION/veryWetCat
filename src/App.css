@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Bright South";
+  src: url("./assets/font/Bright South.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bright South", sans-serif;
+  background-color: #ebece7;
+}
