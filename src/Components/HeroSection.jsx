@@ -54,9 +54,11 @@ const HeroSection = () => {
         />
       </div>
       <div className="text-[20px] lg:text-[50px] font-[400] text-[#2F160B] flex items-center justify-center gap-[20px] lg:gap-[30px] my-[33px]">
-        <p className="cursor-pointer" data-aos="fade-up">
-          Home
-        </p>
+        <a href="">
+          <p className="cursor-pointer" data-aos="fade-up">
+            Home
+          </p>
+        </a>
         <a href="#about">
           <p className="cursor-pointer" data-aos="fade-up">
             About
