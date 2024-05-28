@@ -17,7 +17,7 @@ import Stealth from "../assets/stealth-launch.png";
 import Taxes from "../assets/Taxes.png";
 import Footer from "../assets/Wet_Cat_Footer.png";
 
-const HeroSection = () => {
+const LandingPage = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const scrollToTop = () => {
@@ -44,7 +44,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto mt-[10px]">
+    <div className="max-w-6xl mx-auto mt-[10px] relative">
       <div className="flex items-center justify-center">
         <img
           src={Logo}
@@ -55,22 +55,22 @@ const HeroSection = () => {
       </div>
       <div className="text-[18px] lg:text-[50px] font-[400] text-[#2F160B] flex items-center justify-center gap-[20px] lg:gap-[30px] my-[33px]">
         <a href="#about">
-          <p className="cursor-pointer" data-aos="fade-up">
+          <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
             About
           </p>
         </a>
         <a href="#tokenomics" className="cursor-pointer">
-          <p className="cursor-pointer" data-aos="fade-up">
+          <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
             Tokenomics
           </p>
         </a>
         <a href="#launchcanics" className="cursor-pointer">
-          <p className="cursor-pointer" data-aos="fade-up">
+          <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
             Launchcanics
           </p>
         </a>
         <a href="#buy">
-          <p className="cursor-pointer" data-aos="fade-up">
+          <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
             Buy $WET
           </p>
         </a>
@@ -160,7 +160,7 @@ const HeroSection = () => {
 
       <div>
         <div
-          className="max-w-[640px] mx-auto flex items-center justify-center my-[40px]"
+          className="max-w-[640px] mx-auto flex items-center justify-center my-[40px] hover:animate-pulse cursor-pointer "
           data-aos="fade-up"
         >
           <img src={Buy} alt="Buy button" className="w-[194px] md:w-full" />
@@ -178,7 +178,7 @@ const HeroSection = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-[#2F160B] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#47240E] transition-all duration-300"
+          className="fixed bottom-4 right-4 bg-[#2F160B] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#47240E] transition-all duration-300 animate-bounce hover:animate-none"
         >
           Back to Top
         </button>
@@ -187,4 +187,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default LandingPage;

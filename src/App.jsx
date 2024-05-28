@@ -1,10 +1,10 @@
 import "./App.css";
-import HeroSection from "./Components/HeroSection";
+import LandingPage from "./Components/LandingPage";
 
 function App() {
   return (
     <div className=" max-w-[1920px] lg:mx-auto mx-[10px]">
-      <HeroSection />
+      <LandingPage />
     </div>
   );
 }
