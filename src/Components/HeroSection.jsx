@@ -35,8 +35,8 @@ const HeroSection = () => {
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
     AOS.init({
-      duration: 1000, // animation duration
-      once: true, // whether animation should happen only once - while scrolling down
+      duration: 1000,
+      once: true,
     });
     return () => {
       window.removeEventListener("scroll", toggleVisibility);
@@ -53,12 +53,7 @@ const HeroSection = () => {
           data-aos="fade-up"
         />
       </div>
-      <div className="text-[20px] lg:text-[50px] font-[400] text-[#2F160B] flex items-center justify-center gap-[20px] lg:gap-[30px] my-[33px]">
-        <a href="">
-          <p className="cursor-pointer" data-aos="fade-up">
-            Home
-          </p>
-        </a>
+      <div className="text-[18px] lg:text-[50px] font-[400] text-[#2F160B] flex items-center justify-center gap-[20px] lg:gap-[30px] my-[33px]">
         <a href="#about">
           <p className="cursor-pointer" data-aos="fade-up">
             About
@@ -67,6 +62,11 @@ const HeroSection = () => {
         <a href="#tokenomics" className="cursor-pointer">
           <p className="cursor-pointer" data-aos="fade-up">
             Tokenomics
+          </p>
+        </a>
+        <a href="#launchcanics" className="cursor-pointer">
+          <p className="cursor-pointer" data-aos="fade-up">
+            Launchcanics
           </p>
         </a>
         <a href="#buy">
@@ -108,7 +108,7 @@ const HeroSection = () => {
         <div className="max-w-[185px]">
           <img src={Twitter} alt="Twitter button" className="w-full" />
         </div>
-        <div className="max-w-[553px]">
+        <div className="max-w-[553px] animate-pulse">
           <img src={Buy} alt="Buy button" className="w-full" />
         </div>
         <div className="max-w-[185px]">
@@ -117,7 +117,7 @@ const HeroSection = () => {
       </div>
 
       <div
-        className="max-w-[1023px] mx-auto mt-[50px] lg:mt-[200px]"
+        className="max-w-[1023px] md:max-w-full mx-auto mt-[50px] lg:mt-[200px] animate-bounce"
         data-aos="fade-up"
       >
         <img src={Roadmap} alt="Roadmap" className="w-full" />
@@ -137,7 +137,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div>
+      <div id="launchcanics">
         <div className="flex items-center justify-center" data-aos="fade-up">
           <img src={Launchcanics} alt="Launchcanics" />
         </div>
@@ -163,7 +163,7 @@ const HeroSection = () => {
           className="max-w-[640px] mx-auto flex items-center justify-center my-[40px]"
           data-aos="fade-up"
         >
-          <img src={Buy} alt="Buy button" className="w-[194px]" />
+          <img src={Buy} alt="Buy button" className="w-[194px] md:w-full" />
         </div>
 
         <div data-aos="fade-up" className=" mb-[40px] lg:mb-0 ">
