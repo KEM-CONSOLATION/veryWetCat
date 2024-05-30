@@ -141,7 +141,7 @@ const LandingPage = () => {
         <div className="flex items-center justify-center" data-aos="fade-up">
           <img src={Launchcanics} alt="Launchcanics" />
         </div>
-        <div className="text-[#2F160B] text-center text-[14px] lg:text-[60px] font-[400] flex flex-col items-center justify-center mt-[20px] lg:mt-[90px]">
+        <div className="text-[#2F160B] text-center text-[20px] lg:text-[60px] font-[400] flex flex-col items-center justify-center mt-[20px] lg:mt-[90px]">
           <li className="" data-aos="fade-up">
             Max Supply: 690,000,000
           </li>
