@@ -16,6 +16,7 @@ import Locked from "../assets/Locked.png";
 import Stealth from "../assets/stealth-launch.png";
 import Taxes from "../assets/Taxes.png";
 import Footer from "../assets/Wet_Cat_Footer.png";
+import { RiArrowUpDoubleLine } from "react-icons/ri";
 
 const LandingPage = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -178,9 +179,9 @@ const LandingPage = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-[#2F160B] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#47240E] transition-all duration-300 animate-bounce hover:animate-none"
+          className="fixed bottom-4 right-4 bg-[#2F160B] text-white px-4 py-4 rounded-full shadow-lg hover:bg-[#47240E] transition-all duration-300 animate-bounce hover:animate-none"
         >
-          Back to Top
+          <RiArrowUpDoubleLine className="text-2xl" />
         </button>
       )}
     </div>
