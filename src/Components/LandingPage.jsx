@@ -138,7 +138,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div id="launchcanics">
+      <div id="launchcanics" className=" hidden">
         <div className="flex items-center justify-center" data-aos="fade-up">
           <img src={Launchcanics} alt="Launchcanics" />
         </div>
