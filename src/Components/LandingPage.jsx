@@ -46,11 +46,7 @@ const LandingPage = () => {
             Tokenomics
           </p>
         </a>
-        <a href="#launchcanics" className="cursor-pointer">
-          <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
-            Launchcanics
-          </p>
-        </a>
+
         <a href="#buy">
           <p className="cursor-pointer hover:animate-pulse" data-aos="fade-up">
             Buy $WET
