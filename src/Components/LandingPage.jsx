@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Logo from "../assets/Wet_Cat_Header.png";
@@ -16,32 +16,13 @@ import Locked from "../assets/Locked.png";
 import Stealth from "../assets/stealth-launch.png";
 import Taxes from "../assets/Taxes.png";
 import Footer from "../assets/Wet_Cat_Footer.png";
-import { RiArrowUpDoubleLine } from "react-icons/ri";
 
 const LandingPage = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const toggleVisibility = () => {
-    if (window.pageYOffset > 100) {
-      setIsVisible(true);
-    } else {
-      setIsVisible(false);
-    }
-  };
-
   useEffect(() => {
-    window.addEventListener("scroll", toggleVisibility);
     AOS.init({
-      duration: 1000,
-      once: true,
+      duration: 3000,
+      once: false,
     });
-    return () => {
-      window.removeEventListener("scroll", toggleVisibility);
-    };
   }, []);
 
   return (
@@ -175,15 +156,6 @@ const LandingPage = () => {
           />
         </div>
       </div>
-
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-[#2F160B] text-white px-4 py-4 rounded-full shadow-lg hover:bg-[#47240E] transition-all duration-300 animate-bounce hover:animate-none"
-        >
-          <RiArrowUpDoubleLine className="text-2xl" />
-        </button>
-      )}
     </div>
   );
 };
