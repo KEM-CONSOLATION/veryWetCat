@@ -104,7 +104,7 @@ const LandingPage = () => {
         <div className="max-w-[553px] animate-pulse">
           <img src={Buy} alt="Buy button" className="w-full" />
         </div>
-        <a href="https://t.me/+oTcYNg22mtA2ZTE0" target="blank">
+        <a href="https://t.me/VeryWetpCat" target="blank">
           <div className="max-w-[185px]">
             <img src={Telegram} alt="Telegram button" className="w-full" />
           </div>
