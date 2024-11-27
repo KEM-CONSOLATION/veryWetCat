@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Logo from "../assets/Wet_Cat_Header.png";
-import HeroImage from "../assets/heroCat.png";
+import PussyGif from "../assets/wetPussy.gif";
 import Twitter from "../assets/Wet_Cat _Twitter_Button.png";
 import Buy from "../assets/Wet_Cat _ Buy_Button.png";
 import Telegram from "../assets/Wet_Cat _telegram_BUtton.png";
@@ -16,6 +16,7 @@ import Locked from "../assets/Locked.png";
 import Stealth from "../assets/stealth-launch.png";
 import Taxes from "../assets/Taxes.png";
 import Footer from "../assets/Wet_Cat_Footer.png";
+import CatImage from "../assets/wetpussypink.jpg";
 
 const LandingPage = () => {
   useEffect(() => {
@@ -62,8 +63,17 @@ const LandingPage = () => {
         </p>
         <div className="max-w-[550px] mx-auto">
           <img
-            src={HeroImage}
+            src={CatImage}
             alt="Hero"
+            className="w-full object-cover"
+            data-aos="fade-up"
+          />
+        </div>
+
+        <div className=" shadow max-w-[550px] mx-auto border rounded-[10px] overflow-hidden">
+          <img
+            src={PussyGif}
+            alt="Gif"
             className="w-full object-cover"
             data-aos="fade-up"
           />
@@ -83,15 +93,22 @@ const LandingPage = () => {
         id="buy"
         data-aos="fade-up"
       >
-        <div className="max-w-[185px]">
-          <img src={Twitter} alt="Twitter button" className="w-full" />
-        </div>
+        <a
+          href="https://x.com/very_wet_cat?t=2gcmsbcGsF8QsXatRG4I6Q&s=08"
+          target="blank"
+        >
+          <div className="max-w-[185px]">
+            <img src={Twitter} alt="Twitter button" className="w-full" />
+          </div>
+        </a>
         <div className="max-w-[553px] animate-pulse">
           <img src={Buy} alt="Buy button" className="w-full" />
         </div>
-        <div className="max-w-[185px]">
-          <img src={Telegram} alt="Telegram button" className="w-full" />
-        </div>
+        <a href="https://t.me/+oTcYNg22mtA2ZTE0" target="blank">
+          <div className="max-w-[185px]">
+            <img src={Telegram} alt="Telegram button" className="w-full" />
+          </div>
+        </a>
       </div>
 
       <div
